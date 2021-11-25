@@ -1,0 +1,4 @@
+include ':mo3alej'
+include ':CoreHealth'
+include ':app'
+rootProject.name = "app"

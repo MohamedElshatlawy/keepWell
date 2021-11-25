@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ed6600</color>
+    <color name="colorPrimaryFaded">#88ed6600</color>
+    <color name="colorPrimaryButtonText">#FFFFFF</color>
+    <color name="colorText">#000000</color>
+    <color name="colorPlaceholderText">#992C3244</color>
+    <color name="colorMandatoryText">#F64E60</color>
+    <color name="colorErrorText">#F64E60</color>
+    <color name="colorWelcomeText">#c4c2ce</color>
+    <color name="colorTitleText">#3458a6</color>
+    <color name="colorNavigationBarTint">#FFFFFF</color>
+    <color name="colorSolidButtonText">#FFFFFF</color>
+    <color name="colorBorderedButtonText">#3458a6</color>
+    <color name="colorPrimaryDark">#ed6600</color>
+    <color name="colorAccent">#ed6600</color>
+
+    <!-- Constant colors -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="gold">#FF9800</color>
+    <color name="colorBlue">#3458a6</color>
+    <color name="colorRed">#F64E60</color>
+    <color name="duskYellow">#ffc922</color>
+    <color name="colorGold">#FF9800</color>
+    <color name="colorGray">#c4c2ce</color>
+    <color name="textColor">#2C3244</color>
+    <color name="colorBackGround">#EBEDF2</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="colorSilver">#c4c2ce</color>
+
+</resources>

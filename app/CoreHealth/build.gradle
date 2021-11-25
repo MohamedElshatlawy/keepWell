@@ -1,0 +1,85 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions 'product'
+    productFlavors {
+        keepwell {
+            dimension 'product'
+            buildConfigField 'String', 'baseUrl', '"https://keepwellrpmgateway.azurewebsites.net/api/"'
+        }
+        mo3alej {
+            dimension 'product'
+            buildConfigField 'String', 'baseUrl', '"https://keepwellgateway.azurewebsites.net/DrCornetApi/"'
+        }
+        winTest {
+            dimension 'product'
+            buildConfigField 'String', 'baseUrl', '"https://keepwellgateway.azurewebsites.net/api/"'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+
+    // recycler view
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //card view
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // Play services
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-fitness:19.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+
+    // SecurePreferences
+    implementation "de.adorsys.android:securestoragelibrary:1.0.0"
+
+    // Easy permissions
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // Vonage
+    implementation 'com.opentok.android:opentok-android-sdk:2.17.0'
+
+    // text pin entry
+    implementation 'com.alimuzaffar.lib:pinentryedittext:1.3.10'
+
+    // chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Faded view
+    implementation 'com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0'
+
+}

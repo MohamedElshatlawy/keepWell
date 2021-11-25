@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('../../res/android_keystore')
+            storePassword '000000'
+            keyAlias = 'key0'
+            keyPassword '000000'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.cornetelevated.project.app.kotlin"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 33
+        versionName "0.3.3"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions 'product'
+    productFlavors {
+        keepwell {
+            dimension 'product'
+            resValue "string", "app_name", "KeepWell"
+            applicationId "com.cornetelevated.rpm.patient.android"
+        }
+        winTest {
+            dimension 'product'
+            resValue "string", "app_name", "WinTest"
+            applicationId "com.cornetelevated.rpm.patient.android.wintest"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.android.material:material:1.2.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Play services
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-fitness:19.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // Vonage
+    implementation 'com.opentok.android:opentok-android-sdk:2.17.0'
+
+    // recycler view
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //card view
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    // text pin entry
+    implementation 'com.alimuzaffar.lib:pinentryedittext:1.3.10'
+
+    // chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Faded view
+    implementation 'com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0'
+    // SecurePreferences
+    implementation "de.adorsys.android:securestoragelibrary:1.0.0"
+
+    implementation project(":CoreHealth")
+}

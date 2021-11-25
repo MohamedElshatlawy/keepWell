@@ -1,0 +1,187 @@
+<resources>
+    <string name="brand_logo">brand_logo</string>
+    <string name="ok">OK</string>
+    <string name="end">End</string>
+    <string name="caller">Caller</string>
+    <string name="incoming_call">Incoming call</string>
+    <string name="actionSignIn">Sign in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="date">Date</string>
+    <string name="glucose">Glucose</string>
+    <string name="add_reading">Add reading</string>
+    <string name="add_steps">Add Step count</string>
+    <string name="add_oxygen">Add Oxygen</string>
+    <string name="add_weight">Add Weight</string>
+    <string name="add_glucose">Add Glucose</string>
+    <string name="add_heart_rate">Add Heart rate</string>
+    <string name="add_blood_pressure">Add Blood pressure</string>
+
+
+    <string name="titleDashboard">Dashboard</string>
+
+    <string name="titleSettings">Settings</string>
+    <string name="textLastSync">Last sync:</string>
+    <string name="textNoSync">No sync done</string>
+    <string name="actionSyncNow">Sync now</string>
+    <string name="actionSignOut">Sign out</string>
+    <string name="textZero">0</string>
+    <string name="unitLbs">lbs</string>
+    <string name="textWeight">Weight</string>
+    <string name="unitSteps">Steps</string>
+    <string name="unitMmhg">mmHg</string>
+    <string name="textBloodPressure">Blood pressure</string>
+    <string name="unitBpm">BPM</string>
+    <string name="textPulse">Pulse</string>
+    <string name="unitPercent">%</string>
+    <string name="textOxygen">Oxygen</string>
+    <string name="unitMgdl">mg/dL</string>
+    <string name="textGlucose">Glucose</string>
+    <string name="value">Value</string>
+
+    <string name="login">Login</string>
+    <string name="phone">Mobile Number</string>
+    <string name="email">E-mail</string>
+    <string name="user_name">User Name</string>
+    <string name="register">Register</string>
+
+    <string name="resendCode">did not receive a code? \n<font color='#10206B'>Resend code</font></string>
+
+    <string name="address">Address</string>
+    <string name="email_required">E-mail <font color='#FA0000'>*</font></string>
+    <string name="phone_required">Mobile Number<font color='#FA0000'>*</font></string>
+    <string name="userName_required">User Name <font color='#FA0000'>*</font></string>
+    <string name="mobile_required">Mobile Number <font color='#FA0000'>*</font></string>
+    <string name="password_required">Password <font color='#FA0000'>*</font></string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="confirm_password_required">Confirm Password <font color='#FA0000'>*</font></string>
+    <string name="passwordRequired">Password is required</string>
+    <string name="mobileInvalid">In-valid mobile number</string>
+    <string name="mobileRequired">Mobile number is required</string>
+    <string name="registerIfNotMember">Not a member? Register</string>
+    <string name="emailInvalid">Field accepts e-mail format only</string>
+    <string name="usernameInvalid">Username should be more thant one character and not more than 20 characters</string>
+    <string name="usernameInvalidType">Username accepts lowercase characters only</string>
+    <string name="oldPasswordInvalid">Incorrect old password</string>
+    <string name="samePasswordInvalid">New password should not be the same as old password</string>
+    <string name="passwordInvalid">Password must be at least 8 characters and contains one upper case and one lower case</string>
+    <string name="passwordMismatch">Confirm password does not match password</string>
+    <string name="emailRequired">E-mail is required</string>
+    <string name="usernameRequired">Username is required</string>
+    <string name="confirmPasswordRequired">Confirm Password is required</string>
+    <string name="verificationCode">Verification Code</string>
+    <string name="verifyNow">Verify Now</string>
+    <string name="title_profile">Profile</string>
+    <string name="edit_title_profile">Edit Profile</string>
+    <string name="title_reviews">Reviews</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_prescription">Prescriptions</string>
+    <string name="resetPass">Reset password</string>
+    <string name="forgotPasswordText">Please enter your mobile number to receive a verification code</string>
+    <string name="changePassword">Change password</string>
+    <string name="old_password_required">Old password *</string>
+    <string name="oldPassword">Old password</string>
+    <string name="new_password_required">New Password *</string>
+    <string name="new_password">New password</string>
+    <string name="logout">Logout</string>
+
+    <string name="prescription_name">Prescription Name</string>
+    <string name="prescription_date">Date</string>
+    <string name="download_pdf">Download PDF</string>
+
+
+    <string name="text_lastSync">Last sync:</string>
+    <string name="text_noSync">No sync done</string>
+    <string name="action_sync">Sync now</string>
+    <string name="action_signOut">Sign out</string>
+
+
+    <string name="text_body_measure">Body Measurements</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_height">Height</string>
+    <string name="text_bmi">Body Mass Index</string>
+    <string name="text_body_fat">Body FAT</string>
+
+    <string name="text_heart_rate">Heart Rate</string>
+    <string name="text_blood_pressure">Blood Pressure</string>
+    <string name="text_Glucose">Glucose</string>
+    <string name="text_oxygen">Oxygen</string>
+
+    <string name="text_zero">0</string>
+
+    <string name="unit_lbs">lbs</string>
+    <string name="unit_kg">Kg</string>
+    <string name="unit_cm">cm</string>
+    <string name="unit_bmi">BMI</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_bpm">BPM</string>
+    <string name="unit_mmhg">mmHg</string>
+    <string name="unit_mgdl">mg/dl</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+
+    <string name="add">Add</string>
+    <string name="oxygen">Oxygen</string>
+    <string name="pulse">Pulse</string>
+    <string name="sys">SYS</string>
+    <string name="dia">DIA</string>
+    <string name="unit_steps">Steps</string>
+    <string name="submit">Submit</string>
+
+    <string name="schedule">Schedule Appointment</string>
+    <string name="online_meeting">online</string>
+    <string name="physical_meeting">Physical Visit</string>
+    <string name="available_shots">Available Slots</string>
+    <string name="payment_process">Proceed to payment</string>
+
+    <string name="confirm_appointment">Confirm Appointment</string>
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="accept_terms">I accept all Terms and Conditions*</string>
+    <string name="instruction_text"> -  If appointment canceled before 4 days you will get 100% refund.
+        \n-  If appointment canceled before 2 days you will get 50% refund.
+        \n-  If appointment canceled in the same day you will not be refunded.</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="request_done_successfully">Appointment has been\n booked successfully</string>
+    <string name="appointments">Appointments</string>
+    <string name="history">History</string>
+    <string name="the_location_is_here">the location is here</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="name">Name</string>
+    <string name="specialist">Specialist</string>
+    <string name="date_time">Date | Time</string>
+    <string name="type">Type</string>
+    <string name="physical">Physical</string>
+    <string name="fee">Fee</string>
+
+    <string name="save">Save</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="title_history">History</string>
+    <string name="schedule_appointments">Schedule Appointments</string>
+    <string name="dateOfBirth">Date of Birth</string>
+    <string name="dateOfBirthRequired">Date of birth *</string>
+    <string name="firstName">First name</string>
+    <string name="firstNameRequired">First name *</string>
+    <string name="lastNameRequired">Last name *</string>
+    <string name="lastName">Last name</string>
+    <string name="fnRequired">First name is required</string>
+    <string name="lnRequired">Last name is required</string>
+    <string name="dobRequired">Date of birth is required</string>
+    <string name="title_activity_additional_info">AdditionalInfoActivity</string>
+
+    <string name="additional_info">Additional Info</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="bmi">Body Mass Index (BMI)</string>
+    <string name="bfp">Body Fat Percent % (BFP)</string>
+    <string name="mandatory">*</string>
+
+
+</resources>

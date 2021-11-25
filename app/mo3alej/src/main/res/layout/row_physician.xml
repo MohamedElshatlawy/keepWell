@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/specialistCardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/physicianImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:src="@mipmap/ic_launcher_round"
+            app:civ_border_color="@color/colorWelcomeText"
+            app:civ_border_width="2dp"
+            app:civ_shadow="false" />
+
+        <TextView
+            android:id="@+id/physicianNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/username"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="400"
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/specialistTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="@string/specialist"
+            android:fontFamily="@font/poppins"
+            android:textFontWeight="200"
+            android:textSize="12sp"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

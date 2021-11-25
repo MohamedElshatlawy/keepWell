@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#10206B</color>
+    <color name="colorPrimaryDark">#10206B</color>
+    <color name="colorPrimaryFaded">#8810206B</color>
+    <color name="colorAccent">#D6A828</color>
+    <color name="colorPrimaryButtonText">#FFFFFF</color>
+    <color name="colorText">#000000</color>
+    <color name="colorWelcomeText">#c4c2ce</color>
+    <color name="colorNavigationBarTint">#FFFFFF</color>
+    <color name="colorBorderedButtonText">#3458a6</color>
+    <color name="colorBackGround">#F2F3F6</color>
+    <color name="colorUnselectedButton">#CCD1E2</color>
+</resources>

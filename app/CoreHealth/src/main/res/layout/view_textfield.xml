@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/placeholderLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:textFontWeight="300"
+            android:text="@string/phone"
+            android:textColor="@color/colorPlaceholderText"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/mandatoryLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/mandatory"
+            android:textSize="16sp"
+            android:textColor="@color/colorMandatoryText"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_text_bordered"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/phone"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="25dp"
+            android:singleLine="true"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/editText"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_marginEnd="20dp"
+            android:visibility="gone"
+            tools:ignore="ContentDescription">
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/errorLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="12sp"
+        android:textFontWeight="400"
+        android:text="@string/value"
+        android:textColor="@color/colorErrorText"
+        tools:ignore="UnusedAttribute"
+        />
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="25dp"
+            android:text="@string/schedule"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_label">
+
+            <RadioGroup
+                android:id="@+id/bookingTypeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="24dp"
+                android:paddingTop="8dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="8dp"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/radioOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorBlue"
+                    android:padding="8dp"
+                    android:text="@string/online_meeting" />
+
+                <RadioButton
+                    android:id="@+id/radioPhysical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorBlue"
+                    android:padding="8dp"
+                    android:text="@string/physical_meeting" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/data_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.harrywhewell.scrolldatepicker.DayScrollDatePicker
+                    android:id="@+id/day_date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="4dp"
+                    android:padding="2dp"
+                    app:selectedColor="@color/colorBlue"
+                    app:selectedTextColor="@color/colorBlack" />
+
+                <ProgressBar
+                    android:id="@+id/slotsProgressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:gravity="center"
+                    android:indeterminateTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/available_shots" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/availableShotsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/bookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_button_solid"
+            android:fontFamily="@font/poppins"
+            android:text="NEXT"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_card_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+

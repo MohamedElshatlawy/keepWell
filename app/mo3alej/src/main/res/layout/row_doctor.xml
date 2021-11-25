@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/doctorCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="26dp"
+    card_view:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/doctorProfileImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorWhite"
+            android:src="@mipmap/ic_launcher_round"
+            app:civ_border_color="#DDE0E8"
+            app:civ_border_width="3dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#DDE0E8"
+            app:civ_shadow_radius="3dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/clinicTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="One Clinic"
+            android:textColor="#42425B"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/doctorProfileImageView"
+            app:layout_constraintTop_toTopOf="@+id/doctorProfileImageView" />
+
+        <TextView
+            android:id="@+id/doctorNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Dr.Ola Mohamed"
+            android:textColor="#42425B"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/clinicTextView"
+            app:layout_constraintTop_toBottomOf="@+id/clinicTextView" />
+
+        <TextView
+            android:id="@+id/specialityTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Cardioligest"
+            android:textColor="#42425B"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/doctorNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/doctorNameTextView" />
+
+        <ImageView
+            android:id="@+id/videoImageView"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_icon_circular"
+            android:scaleType="center"
+            android:src="@drawable/ic_video"
+            app:layout_constraintStart_toStartOf="@+id/specialityTextView"
+            app:layout_constraintTop_toBottomOf="@+id/specialityTextView" />
+
+        <ImageView
+            android:id="@+id/physicalImageView"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_icon_circular"
+            android:scaleType="center"
+            android:src="@drawable/ic_physical"
+            app:layout_constraintStart_toEndOf="@+id/videoImageView"
+            app:layout_constraintTop_toTopOf="@+id/videoImageView" />
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/bg_button_bordered"
+            android:drawableStart="@drawable/ic_money"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="10dp"
+            android:text="400 LE"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/specialityTextView"
+            app:layout_constraintTop_toBottomOf="@+id/specialityTextView" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountTextView" />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:drawableLeft="@drawable/ic_physical"
+            android:drawablePadding="8dp"
+            android:gravity="left|center"
+            android:text="address"
+            android:textColor="#42425B"
+            android:textSize="12sp"
+            android:drawableTint="@color/colorWelcomeText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextView">
+
+
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_watch"
+                android:drawablePadding="8dp"
+                android:gravity="left|center"
+                android:padding="4dp"
+                android:text="10:00am - 2:00 pm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_bordered"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="4:00pm - 8:00 pm"
+                app:layout_constraintEnd_toEndOf="@+id/addressTextView"
+                app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doctorBookingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeLayout">
+
+
+            <TextView
+                android:id="@+id/availableTextView"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:layout_weight="4.4"
+                android:background="@color/colorWelcomeText"
+                android:gravity="center"
+                android:text="Next Available: 22 March 2019"
+                android:textColor="#42425B" />
+
+            <ImageView
+                android:id="@+id/availableImageView"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:layout_weight=".6"
+                android:background="@drawable/bg_online"
+                android:scaleType="center"
+                android:src="@drawable/ic_today" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

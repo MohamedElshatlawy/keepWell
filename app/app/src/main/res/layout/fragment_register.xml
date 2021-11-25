@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/usTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/userName_required"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/user_name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usTextView"
+            tools:ignore="Autofill,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/userNameErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameEditText"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/mTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/phone_required"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNameErrorTextView" />
+
+        <EditText
+            android:id="@+id/mobileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mTextView"
+            tools:ignore="Autofill,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/mobileErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileEditText"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/fnTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/firstNameRequired"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileErrorTextView" />
+
+        <EditText
+            android:id="@+id/fnEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/firstName"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fnTextView"
+            tools:ignore="Autofill,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/fnErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fnEditText"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/lnTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/lastNameRequired"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fnErrorTextView" />
+
+        <EditText
+            android:id="@+id/lnEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/lastName"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnTextView"
+            tools:ignore="Autofill,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/lnErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnEditText"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/dobTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/dateOfBirithRequired"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnErrorTextView" />
+
+        <EditText
+            android:id="@+id/dobEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:clickable="true"
+            android:focusable="false"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/dateOfBirith"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dobTextView"
+            tools:ignore="Autofill,KeyboardInaccessibleWidget,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/dobErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dobEditText"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/emTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/email_required"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dobErrorTextView" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emTextView"
+            tools:ignore="Autofill,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/emailErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/passTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/password_required"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailErrorTextView" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passTextView"
+            tools:ignore="Autofill,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/passwordErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/com_passTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/confirm_password_required"
+            android:textColor="@color/textColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordErrorTextView" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/bg_text_bordered"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/com_passTextView"
+            tools:ignore="Autofill,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/confirmPasswordErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button_solid"
+            android:enabled="false"
+            android:fontFamily="@font/poppins"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textFontWeight="400"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordErrorTextView"
+            tools:ignore="UnusedAttribute" />
+
+
+        <ProgressBar
+            android:id="@+id/registerProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

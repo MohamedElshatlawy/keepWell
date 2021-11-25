@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bosphere.fadingedgelayout.FadingEdgeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fading_edge_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="@+id/label_sign_in"
+    android:layout_marginTop="0dp"
+    app:fel_edge="top"
+    app:fel_size_top="15dp"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp" />
+
+</com.bosphere.fadingedgelayout.FadingEdgeLayout>

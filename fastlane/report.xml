@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00137">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: git log -1 --pretty=%B" time="0.012349">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: assembleClinicsRelease" time="2.521212">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -1,0 +1,53 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+
+  desc "Build apk and submit to Firebase"
+  lane :firebase do
+
+    root_dir = File.expand_path (File.join(File.dirname(__FILE__), '..'))
+    commit_message = sh("git log -1 --pretty=%B")
+
+    gradle(
+	task: "assembleWinTest",
+	build_type: "Release",
+	print_command: false,
+	project_dir: "#{root_dir}/app",
+	properties: {
+	    "android.injected.signing.store.file" => "#{root_dir}/res/android_keystore",
+	    "android.injected.signing.store.password" => "000000",
+	    "android.injected.signing.key.alias" => "key0",
+	    "android.injected.signing.key.password" => "000000"
+	}
+    )
+
+    firebase_app_distribution(
+	app: "1:556606501296:android:003bc0d3ef4b9400496675",
+	release_notes: commit_message,
+	testers: "zainab.hossam@cornetelevated.com, zainabhossam94@gmail.com, mina.thabet@gmail.com, bishoy.isaac@cornetelevated.com, mohamedmohsen19942@gmail.com, neugrams@gmail.com, hageur.ossama@gmail.com, mhmd.elkenz12@gmail.com, hadeelahmed555@gmail.com, cornetbtest@gmail.com",
+	firebase_cli_token: "1//0399DBB1ivKHeCgYIARAAGAMSNwF-L9Irkzt9Y2pYpAdQX23AO4MGsNTvdNUO8eCNT2NWaUPd0EkQfkHrekDowYafsB6PBXVGUjs"
+    )
+
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+end

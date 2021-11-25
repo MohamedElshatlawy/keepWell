@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/transparent">
+
+    <!--Bottom View For Right to Left-->
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/editAppImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_edit_appointment" />
+
+
+        <ImageView
+            android:id="@+id/deleteAppImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/ic_delete_appointment" />
+
+    </LinearLayout>
+
+    <!-- Top View,  Row itemView of RecyclerView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scheduleCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/colorWhite"
+        card_view:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/physicianName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Doctor Name"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/physicianSpecialist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:text="specialization"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/physicianName" />
+
+            <TextView
+                android:id="@+id/appointmentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Appointment"
+                android:textStyle="bold"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/physicianSpecialist" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:text="20 jun 2020 | 22:00"
+                android:textColor="@color/colorBlack"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/appointmentTextView" />
+
+            <TextView
+                android:id="@+id/typeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Online Session"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toBottomOf="@+id/appointmentTextView"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="@+id/appointmentTextView" />
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:drawableLeft="@drawable/ic_on_going"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="On Going"
+                card_view:layout_constraintBottom_toBottomOf="@+id/dateTextView"
+                card_view:layout_constraintStart_toStartOf="@+id/typeTextView"
+                card_view:layout_constraintTop_toTopOf="@+id/dateTextView"
+                card_view:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</com.daimajia.swipe.SwipeLayout>

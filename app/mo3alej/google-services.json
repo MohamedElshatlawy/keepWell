@@ -1,0 +1,191 @@
+{
+  "project_info": {
+    "project_number": "556606501296",
+    "firebase_url": "https://pushnotificationsrpm.firebaseio.com",
+    "project_id": "pushnotificationsrpm",
+    "storage_bucket": "pushnotificationsrpm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556606501296:android:32c8f5c606fe7a4c496675",
+        "android_client_info": {
+          "package_name": "com.cornetelevated.clinics.android.kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAodMNDhMPveH9zHMfdeOiUkn7GYWrj5a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "556606501296-v08dqgqfu889s17kf50r0rej056hho09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cornetelevated.rpm.patient.ios.testwin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556606501296:android:e863ccb92cc9e8b2496675",
+        "android_client_info": {
+          "package_name": "com.cornetelevated.rpm.patient.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAodMNDhMPveH9zHMfdeOiUkn7GYWrj5a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "556606501296-v08dqgqfu889s17kf50r0rej056hho09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cornetelevated.rpm.patient.ios.testwin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556606501296:android:6dad52201d95cb77496675",
+        "android_client_info": {
+          "package_name": "com.cornetelevated.rpm.patient.android.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAodMNDhMPveH9zHMfdeOiUkn7GYWrj5a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "556606501296-v08dqgqfu889s17kf50r0rej056hho09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cornetelevated.rpm.patient.ios.testwin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556606501296:android:003bc0d3ef4b9400496675",
+        "android_client_info": {
+          "package_name": "com.cornetelevated.rpm.patient.android.wintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAodMNDhMPveH9zHMfdeOiUkn7GYWrj5a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "556606501296-v08dqgqfu889s17kf50r0rej056hho09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cornetelevated.rpm.patient.ios.testwin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556606501296:android:7d9283a101c4404a496675",
+        "android_client_info": {
+          "package_name": "com.cornetelevated.rpm.patient.androiddemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAodMNDhMPveH9zHMfdeOiUkn7GYWrj5a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556606501296-alnnqvqaple53s45kdrgh6l9qeacsc9k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "556606501296-v08dqgqfu889s17kf50r0rej056hho09.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cornetelevated.rpm.patient.ios.testwin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

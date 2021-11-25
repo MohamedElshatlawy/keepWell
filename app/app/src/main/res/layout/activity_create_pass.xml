@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/brand_logo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/label_create_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="700"
+        android:textSize="24sp"
+        android:textColor="#3458a6"
+        android:text="@string/create_password"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_logo"
+        tools:ignore="UnusedAttribute" />
+
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+        android:id="@+id/fading_edge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_create_pass"
+        android:layout_marginTop="0dp"
+        app:fel_edge="top|bottom"
+        app:fel_size_top="20dp"
+        app:fel_size_bottom="20dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/passTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="45dp"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="400"
+                    android:textSize="16sp"
+                    android:hint="@string/password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    tools:ignore="UnusedAttribute" />
+
+                <EditText
+                    android:id="@+id/confirmPassTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="45dp"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="400"
+                    android:textSize="16sp"
+                    android:hint="@string/confirm_password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+                    android:id="@+id/actionButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/bg_button_solid"
+                    android:text="@string/create_password"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="400"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    tools:ignore="UnusedAttribute"
+                    style="?android:attr/borderlessButtonStyle" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:indeterminateTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

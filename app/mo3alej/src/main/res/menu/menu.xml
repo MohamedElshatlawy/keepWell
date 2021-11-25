@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <item
+        android:id="@+id/navigationDashboard"
+        android:icon="@drawable/tb_calendar"
+        android:title="@string/titleCalendar" />
+    -->
+
+    <item
+        android:id="@+id/navigationSettings"
+        android:icon="@drawable/tb_settings"
+        android:title="@string/titleSettings" />
+
+    <item android:id="@+id/navigationSearch"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigationProfile"
+        android:icon="@drawable/tb_profile"
+        android:title="@string/titleSettings" />
+
+</menu>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mo3alej</string>
+    <string name="validationText">please type the validation \n code send to</string>
+    <string name="fewMinutes">it will take a few minutes</string>
+    <string name="backToHome">Back To Home</string>
+    <string name="backToLogin">Back To Login</string>
+    <string name="successfully">Successfully</string>
+    <string name="changed">changed</string>
+    <string name="forgotPasswordDescription">Please type your mobile used for registration</string>
+    <string name="titleCalendar">Calendar</string>
+    <string name="notification">Notification</string>
+    <string name="textInsuranceCards">Insurance Cards</string>
+    <string name="textPayments">Payments</string>
+    <string name="textContactUs">Contact us</string>
+    <string name="language">Language</string>
+    <string name="textPatientName">Patient Name</string>
+    <string name="physicians">My Physicians</string>
+    <string name="searchDescription">Find a great Doctor, Clinic, Hospital, Service...</string>
+    <string name="search">Search</string>
+    <string name="online">Online</string>
+    <string name="doctor_clinic_hospital">Doctor, Clinic, Hospital</string>
+    <string name="governorate_city_s_area">Governorate, City\'s Area</string>
+</resources>

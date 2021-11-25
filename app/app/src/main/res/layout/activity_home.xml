@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f3"
+    android:paddingTop="0dp">
+
+    <TextView
+        android:id="@+id/welcomeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="25dp"
+        android:text="@string/welcome"
+        android:textColor="#c4c2ce"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="700"
+        tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:text=""
+        android:textColor="@color/colorBorderedButtonText"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="700"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/navView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLabel" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bg_bottom_nav_bar"
+        app:itemIconTint="@color/colorNavigationBarTint"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

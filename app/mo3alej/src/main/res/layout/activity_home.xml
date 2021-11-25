@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackGround">
+
+    <TextView
+        android:id="@+id/welcomeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="25dp"
+        android:text="@string/welcome"
+        android:textColor="#c4c2ce"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="700"
+        tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:text=""
+        android:textColor="@color/colorBorderedButtonText"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="700"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/navView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLabel" />
+
+    <com.cornetelevated.clinics.screens.views.NavigationViewBackground
+        android:id="@+id/navViewBg"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        app:menu="@menu/menu"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:menu="@menu/menu"
+        android:background="@color/transparent"
+        android:outlineSpotShadowColor="@color/transparent"
+        android:outlineAmbientShadowColor="@color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@color/tb_item_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="7dp"
+        android:paddingBottom="15dp"
+        android:src="@drawable/tb_search"
+        android:background="@drawable/bg_solid_circular"
+        app:elevation="8dp"
+        app:layout_constraintTop_toTopOf="@+id/navViewBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

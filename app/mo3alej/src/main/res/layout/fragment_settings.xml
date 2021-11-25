@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bosphere.fadingedgelayout.FadingEdgeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fading_edge_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:fel_edge="top"
+    app:fel_size_top="20dp"
+    app:layout_constraintTop_toBottomOf="@+id/titleImage"
+    app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackGround">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/ic_launcher_round"
+                app:civ_border_color="@color/colorPrimaryFaded"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="@color/colorPrimaryFaded"
+                app:civ_shadow_radius="3dp"
+                app:layout_constraintHorizontal_bias="0.497"
+                tools:ignore="MissingClass" />
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/notificationsTextView"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification"
+                android:paddingStart="45dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/ic_notifications"
+                app:drawableTint="@color/colorPlaceholderText"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="500"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/insuranceTextView"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textInsuranceCards"
+                android:paddingStart="45dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/ic_credit_card"
+                app:drawableTint="@color/colorPlaceholderText"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="500"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/paymentsTextView"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textPayments"
+                android:paddingStart="45dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/ic_payment"
+                app:drawableTint="@color/colorPlaceholderText"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="500"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/contactUsTextView"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textContactUs"
+                android:paddingStart="45dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/ic_mail"
+                app:drawableTint="@color/colorPlaceholderText"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="500"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/changePasswordTextView"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/changePassword"
+                android:paddingStart="48dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/ic_lock"
+                app:drawableTint="@color/colorPlaceholderText"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="500"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/languageTextView"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:paddingStart="45dp"
+                android:paddingEnd="15dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/ic_translate"
+                app:drawableTint="@color/colorPlaceholderText"
+                android:fontFamily="@font/poppins"
+                android:textFontWeight="500"
+                tools:ignore="UnusedAttribute" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bg_button_gold"
+                android:fontFamily="@font/poppins"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+                android:textColor="#D6A828"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</com.bosphere.fadingedgelayout.FadingEdgeLayout>

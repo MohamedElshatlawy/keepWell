@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="-60dp"
+        android:src="@drawable/brand_watermark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@id/titleImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/brand_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+        android:id="@+id/fading_edge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:fel_edge="top"
+        app:fel_size_top="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titleLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginEnd="45dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/verificationCode"
+                    android:textColor="@color/colorPrimary"
+                    android:textFontWeight="600"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/descriptionLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginEnd="45dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="@string/validationText"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/titleLabel" />
+
+                <TextView
+                    android:id="@+id/phoneLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginEnd="45dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="@string/phone"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/descriptionLabel" />
+
+                <TextView
+                    android:id="@+id/resetLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginEnd="45dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="@string/fewMinutes"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
+
+                <com.alimuzaffar.lib.pin.PinEntryEditText
+                    android:id="@+id/pinTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="45dp"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textIsSelectable="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/resetLabel"
+                    app:pinLineStroke="2dp"
+                    app:pinLineStrokeSelected="4dp" />
+
+                <TextView
+                    android:id="@+id/errorLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginEnd="65dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/pinTextField" />
+
+                <LinearLayout
+                    android:id="@+id/resendLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/errorLabel"
+                    >
+
+                    <TextView
+                        android:id="@+id/timerLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="22:22"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/resendTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/resendCode"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/actionButton"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="45dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_button_solid"
+                    android:enabled="false"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/verifyNow"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorSolidButtonText"
+                    android:textColorHighlight="@color/colorSolidButtonText"
+                    android:textColorLink="@color/colorSolidButtonText"
+                    android:textFontWeight="400"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toBottomOf="@+id/resendLayout"
+                    tools:ignore="UnusedAttribute" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
